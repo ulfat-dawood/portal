@@ -213,6 +213,40 @@ Default btn CSS
     .burger-icon{
         display: none;
     }
+
+    .sidebar{
+        display: none;
+        background: #fff;
+        position: absolute;
+        top:90%; 
+        left: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        // display: flex; 
+        flex-direction: column;
+        gap: 5px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .secondary-btn{
+            width: 100%;
+            margin: 0 !important;
+        }
+
+        &:before{
+            content:""; 
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            border: 15px solid transparent;
+            border-bottom-color: #fff;
+            top:-30px; 
+            left: 10px;
+        }
+        &.show{
+            display: flex;
+        }
+    }
+
 }   
 
 

@@ -336,16 +336,17 @@ window.addEventListener('scroll', ()=>{
 
 // responsive navbar 
 
-const burger = document.querySelector('#menu-icon'); 
-const sidebar = document.querySelector('#sidebar'); 
+const burger = document.querySelector('.burger-icon'); 
+const sidebar = document.querySelector('.sidebar'); 
 
 burger.addEventListener('click', _=>{
+	console.log("jaja")
     if(!sidebar.classList.contains("show")){
         sidebar.classList.add("show"); 
-        burger.innerHTML= ""
+        burger.innerHTML= "<i class='icofont-close' style='color: white; font-size: 30px;'></i>"
     }else{
         sidebar.classList.remove("show");
-        burger.innerHTML= ""
+        burger.innerHTML= "<i class='icofont-navigation-menu' style='color: white; font-size: 30px;'></i>"
     }
 })
 

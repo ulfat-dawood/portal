@@ -222,6 +222,45 @@ Default btn CSS
   display: none;
 }
 
+.sticky-nav .sidebar {
+  display: none;
+  background: #fff;
+  position: absolute;
+  top: 90%;
+  left: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav .sidebar .secondary-btn {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.sticky-nav .sidebar:before {
+  content: "";
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  border: 15px solid transparent;
+  border-bottom-color: #fff;
+  top: -30px;
+  left: 10px;
+}
+
+.sticky-nav .sidebar.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .default-btn, .secondary-btn {
   display: inline-block;
   padding: .65rem 1rem;
