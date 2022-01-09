@@ -1,4 +1,17 @@
 @media only screen and (max-width: 767px) {
+  .sticky-nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .sticky-nav .btn-group {
+    display: none;
+  }
+  .sticky-nav .burger-icon {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
   .ptb-100 {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -87,7 +100,6 @@
     display: block !important;
   }
   .main-banner-item {
-    height: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -805,7 +817,6 @@
     display: block !important;
   }
   .main-banner-item {
-    height: 100%;
     padding-top: 120px;
     padding-bottom: 120px;
   }

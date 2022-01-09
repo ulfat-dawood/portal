@@ -321,6 +321,7 @@ jQuery(function ($) {
 
 }(jQuery));
 
+// STICKY NAVBAR 
 window.addEventListener('scroll', ()=>{
     const nav= document.querySelector('.sticky-nav');
     
@@ -331,3 +332,29 @@ window.addEventListener('scroll', ()=>{
         nav.classList.remove('is-scrolled');
     }
 }); 
+
+
+// responsive navbar 
+
+const burger = document.querySelector('#menu-icon'); 
+const sidebar = document.querySelector('#sidebar'); 
+
+burger.addEventListener('click', _=>{
+    if(!sidebar.classList.contains("show")){
+        sidebar.classList.add("show"); 
+        burger.innerHTML= ""
+    }else{
+        sidebar.classList.remove("show");
+        burger.innerHTML= ""
+    }
+})
+
+const menuItem = document.querySelectorAll('#sidebar li');
+
+menuItem.forEach(item=>{
+    item.addEventListener('click', _=>{
+        sidebar.classList.remove("show");
+        burger.innerHTML= "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu' style='align-self: center;'><line x1='3' y1='12' x2='21' y2='12'></line><line x1='3' y1='6' x2='21' y2='6'></line><line x1='3' y1='18' x2='21' y2='18'></line></svg>"
+
+    })
+})
