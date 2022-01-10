@@ -1,3 +1,4 @@
+ ////////// CUSTOM RESPONSIVE START //////////
 @media only screen and (max-width: 767px) {
     .sticky-nav {
         padding-left: 20px;
@@ -12,6 +13,9 @@
 
 
 }
+
+ ////////// CUSTOM RESPONSIVE END //////////
+
 @media only screen and (max-width: 767px) {
     .ptb-100 {
         padding-top: 50px;
@@ -146,7 +150,7 @@
     }
     .main-banner-search-form {
         padding: 15px 20px 5px;
-        margin: 25px auto 0;
+        margin: 40px auto 0;
 
         form {
             .col-lg-5 {

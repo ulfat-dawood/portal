@@ -31,6 +31,8 @@
 <link rel="stylesheet" href="assets/css/imagelightbox.min.css">
 <!-- Style CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/custom.css">
 <!-- Responsive CSS -->
 <link rel="stylesheet" href="assets/css/responsive.css">
 <!-- RTL CSS -->
@@ -130,24 +132,45 @@
                                     <!-- <p>Discover The Best Doctors, Clinic, And Hospital The City Nearest You</p> -->
                                 </div>
     
-                                <div class="main-banner-search-form">
-                                    <form>
+                                <div class="main-banner-search-form" style="position: relative;">
+                                    <form id="dr-search-form">
                                         <div class="row">
-                                            <div class="col-lg-5 col-md-6">
-                                                <div class="form-group">
-                                                    <label><i class='flaticon-pin'></i></label>
-                                                    <input type="text" class="form-control" placeholder="Search Location">
-                                                </div>
-                                            </div>
+                                            
+                                                <input class="search-tab-input" id="tab1" type="radio" name="tabsA" checked>
+                                                <label class="search-tab-label tab1" for="tab1">الطبيب</label>
+                                                  
+                                                <input class="search-tab-input" id="tab2" type="radio" name="tabsA">
+                                                <label class="search-tab-label tab2" for="tab2">المنشأة</label>
+                                                  
+                                                <input class="search-tab-input" id="tab3" type="radio" name="tabsA">
+                                                <label class="search-tab-label tab3" for="tab3">التخصص</label>
     
-                                            <div class="col-lg-7 col-md-6">
+                                            <div class="col-lg-12 col-md-12 search-bar" id="content1">
                                                 <div class="form-group">
                                                     <label><i class='flaticon-doctor-2'></i></label>
-                                                    <input type="text" class="form-control" placeholder="Search Doctors">
+                                                    <input type="text" class="form-control" placeholder="اسم الطبيب">
+                                                </div>
+                                            </div>
+ 
+    
+                                            <div class="col-lg-12 col-md-12 search-bar" id="content2">
+                                                <div class="form-group">
+                                                    <label><i class='flaticon-doctor-2'></i></label>
+                                                    <input type="text" class="form-control" placeholder="اسم المنشأة">
+                                                </div>
+                                            </div>
+ 
+    
+                                            <div class="col-lg-12 col-md-12 search-bar" id="content3">
+                                                <div class="form-group">
+                                                    <label><i class='flaticon-doctor-2'></i></label>
+                                                    <input type="text" class="form-control" placeholder="التخصص">
                                                 </div>
                                             </div>
     
                                             <button type="submit"><i class='bx bx-search-alt'></i></button>
+
+
                                         </div>
                                     </form>
                                 </div>

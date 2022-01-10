@@ -14,3 +14,61 @@
     height: 100%;
   }
 }
+
+/* /////////////// SEARCH TABS ///////////////*/
+#dr-search-form{
+
+  .search-tab-input{
+    display: none;
+
+    &#tab1:checked ~ #content1,
+    &#tab2:checked ~ #content2,
+    &#tab3:checked ~ #content3{
+      display: block;
+    }
+    &:checked + .search-tab-label {
+      color: #000;
+      background: #DDE3E7;
+      border: none;
+    }
+
+  } 
+  
+  .search-tab-label{
+    position: absolute;
+    z-index: 9;
+    background: #CFF9F3;
+    border-radius: 10px 10px 0 0;
+    padding: .5rem 1rem 0 1rem;
+    width: fit-content;
+    color: #000;
+    top:-47px; 
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 600;
+    cursor: pointer;
+  
+    &.tab3{
+      transform: translateX(-150%);
+      // background: red;
+    }
+  
+    &.tab1{
+      transform: translateX(60%);
+      // background: green;
+  
+    }
+  }
+
+  //hide search bar 
+  .search-bar{
+    display: none;
+    // background: #000;
+  }
+
+}
+
+
+
+//show search bar
+
