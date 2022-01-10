@@ -323,13 +323,16 @@ jQuery(function ($) {
 
 // STICKY NAVBAR 
 window.addEventListener('scroll', ()=>{
-    const nav= document.querySelector('.sticky-nav');
+	const nav= document.querySelector('.sticky-nav');
+	const navLogo = document.querySelector('.logo img'); 
     
     if(window.pageYOffset > 40){
-        nav.classList.add('is-scrolled');
+		nav.classList.add('is-scrolled');
+		navLogo.src="assets/img/athir-logo-colorful.svg"
 
     }else{
         nav.classList.remove('is-scrolled');
+		navLogo.src="assets/img/athir-logo.svg"
     }
 }); 
 
