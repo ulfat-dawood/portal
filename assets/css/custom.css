@@ -88,8 +88,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 5px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sticky-nav .sidebar .secondary-btn {

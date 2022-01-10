@@ -325,14 +325,18 @@ jQuery(function ($) {
 window.addEventListener('scroll', ()=>{
 	const nav= document.querySelector('.sticky-nav');
 	const navLogo = document.querySelector('.logo img'); 
+	const navMenuIcon = document.querySelector('.burger-icon i'); 
     
     if(window.pageYOffset > 40){
 		nav.classList.add('is-scrolled');
 		navLogo.src="assets/img/athir-logo-colorful.svg"
+		navMenuIcon.style.color= "black";
 
     }else{
         nav.classList.remove('is-scrolled');
 		navLogo.src="assets/img/athir-logo.svg"
+		navMenuIcon.style.color= "white";
+
     }
 }); 
 
@@ -343,13 +347,13 @@ const burger = document.querySelector('.burger-icon');
 const sidebar = document.querySelector('.sidebar'); 
 
 burger.addEventListener('click', _=>{
-	console.log("jaja")
+	let navMenuIconColor= window.pageYOffset > 40? "black" : "white"; 
     if(!sidebar.classList.contains("show")){
         sidebar.classList.add("show"); 
-        burger.innerHTML= "<i class='icofont-close' style='color: white; font-size: 30px;'></i>"
+        burger.innerHTML= "<i class='icofont-close' style='color: "+ navMenuIconColor +"; font-size: 30px;'></i>"
     }else{
         sidebar.classList.remove("show");
-        burger.innerHTML= "<i class='icofont-navigation-menu' style='color: white; font-size: 30px;'></i>"
+        burger.innerHTML= "<i class='icofont-navigation-menu' style='color: "+ navMenuIconColor +"; font-size: 30px;'></i>"
     }
 })
 
