@@ -125,7 +125,6 @@ i {
 
 img {
   max-width: 100%;
-  height: auto;
   display: inline-block;
 }
 
@@ -169,98 +168,6 @@ img {
 /*================================================
 Default btn CSS
 =================================================*/
-.sticky-nav {
-  position: fixed;
-  top: 0;
-  background: rgba(0, 0, 0, 0);
-  width: 100%;
-  z-index: 99;
-  height: 100px;
-  padding: .5rem 5rem;
-  padding-top: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-.sticky-nav .logo {
-  height: 100%;
-  width: 200px;
-}
-
-.sticky-nav .logo img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.sticky-nav.is-scrolled {
-  background: rgba(42, 155, 151, 0.95);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: .5rem;
-  height: 70px;
-}
-
-.sticky-nav.is-scrolled .logo {
-  width: 150px;
-}
-
-.sticky-nav .burger-icon {
-  display: none;
-}
-
-.sticky-nav .sidebar {
-  display: none;
-  background: #fff;
-  position: absolute;
-  top: 90%;
-  left: 15px;
-  padding: 10px;
-  border-radius: 10px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 5px;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.sticky-nav .sidebar .secondary-btn {
-  width: 100%;
-  margin: 0 !important;
-}
-
-.sticky-nav .sidebar:before {
-  content: "";
-  height: 0px;
-  width: 0px;
-  position: absolute;
-  border: 15px solid transparent;
-  border-bottom-color: #fff;
-  top: -30px;
-  left: 10px;
-}
-
-.sticky-nav .sidebar.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .default-btn, .secondary-btn {
   display: inline-block;
   padding: .65rem 1rem;
