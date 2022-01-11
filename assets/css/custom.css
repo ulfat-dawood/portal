@@ -164,6 +164,29 @@
 }
 
 /* /////////////// DOC PROFILE  ///////////////*/
+.appt-details {
+  background: #fff;
+  -webkit-box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.25);
+          box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.25);
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.appt-details div {
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 7px;
+  border: 1px solid #eee;
+  height: 200px;
+}
+
 /* /////////////// DOCS CARDS ///////////////*/
 #dr-cards-container {
   height: 500px;
