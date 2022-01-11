@@ -187,6 +187,90 @@
   height: 200px;
 }
 
+/* /////////////// LOGIN FORM ///////////////*/
+#register-form {
+  width: 90%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+#register-form .carddy-body {
+  padding: 1.25rem;
+}
+
+#register-form .brand {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px auto;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+#register-form .brand img {
+  width: 100%;
+}
+
+#register-form .card-wrapper {
+  width: 400px;
+}
+
+#register-form .carddy {
+  border-color: transparent;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#register-form .carddy.fat {
+  padding: 10px;
+}
+
+#register-form .carddy .card-title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #12585E;
+}
+
+#register-form .form-control {
+  border-width: 2.3px;
+}
+
+#register-form .form-group label {
+  width: 100%;
+}
+
+#register-form .btn.btn-block {
+  padding: 12px 10px;
+}
+
+#register-form .footer {
+  margin: 40px 0;
+  color: #888;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  #register-form .card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #register-form .card.fat {
+    padding: 0;
+  }
+  #register-form .card.fat .carddy-body {
+    padding: 15px;
+  }
+}
+
 /* /////////////// DOCS CARDS ///////////////*/
 #dr-cards-container {
   height: 500px;

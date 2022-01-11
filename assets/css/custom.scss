@@ -165,6 +165,93 @@
 }
 
 
+/* /////////////// LOGIN FORM ///////////////*/
+// https://github.com/nauvalazhar/bootstrap-4-login-page
+
+#register-form{
+  width:90%; 
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 200px;
+
+  .carddy-body{
+    padding: 1.25rem;
+  }
+   .brand {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+    position: relative;
+    z-index: 1;
+  }
+  
+   .brand img {
+    width: 100%;
+  }
+  
+   .card-wrapper {
+    width: 400px;
+  }
+  
+   .carddy {
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0,0,0,.05);
+  }
+  
+   .carddy.fat {
+    padding: 10px;
+  }
+  
+   .carddy .card-title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #12585E; 
+  }
+  
+   .form-control {
+    border-width: 2.3px;
+  }
+  
+   .form-group label {
+    width: 100%;
+  }
+  
+   .btn.btn-block {
+    padding: 12px 10px;
+  }
+  
+   .footer {
+    margin: 40px 0;
+    color: #888;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 425px) {
+     .card-wrapper {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+     .card.fat {
+      padding: 0;
+    }
+  
+     .card.fat .carddy-body {
+      padding: 15px;
+    }
+  }
+
+}
+
+
+
 /* /////////////// DOCS CARDS ///////////////*/
 
 #dr-cards-container{
